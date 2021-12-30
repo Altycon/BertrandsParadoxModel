@@ -1,3 +1,5 @@
+//UNFINISHED
+
 const log = console.log;
 
 function randomRange(min,max){
