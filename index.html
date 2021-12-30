@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bertrands Paradox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Modeling Bertrand's Probability Paradox</h1>
+        <p>Longest &divide; (Longest &plus; Shortest) &equals; Probability</p>
+    </header>
+    <main>
+        <section class="simulations">
+
+            <div class="model model1">
+                <div class="model-data">
+                    <p>Base</p>
+                    <p>Line Count: <span id="BaseLineCount">0001</span></p>
+                </div>
+                <canvas id="canvas1" class="canvas"></canvas>
+            </div>
+
+            <div class="model model2">
+                <div class="model-data">
+                    <p>
+                        <span id="LongestThirdsSum1">0001</span>
+                            &divide; 
+                        (<span id="LongestThirdsSum2">0001</span>
+                            &plus; 
+                        <span id="ShortestThirdsSum1">0002</span>)   
+                    </p>
+                    <p>
+                        &equals;
+                        <span id="ThirdsProbability">0.3346</span>
+                    </p>
+                </div>
+                <canvas id="canvas2" class="canvas"></canvas>
+            </div>
+
+            <div class="model model3">
+                <div class="model-data">
+                    <p>
+                        <span id="LongestFourthsSum1">0001</span>
+                            &divide; 
+                        (<span id="LongestFourthsSum2">0001</span>
+                            &plus; 
+                        <span id="ShortestFourthsSum1">0003</span>)
+                    </p>
+                    <p>
+                        &equals;
+                        <span id="FourthsProbability">0.2516</span>
+                    </p>
+                </div>
+                <canvas id="canvas3" class="canvas"></canvas>
+            </div>
+
+            <div class="model model4">
+                <div class="model-data">
+                    <p>
+                        <span id="LongestHalvesSum1">0001</span>
+                            &divide; 
+                        (<span id="LongestHalvesSum2">0001</span>
+                            &plus; 
+                        <span id="ShortestHalvesSum1">0001</span>) 
+                    </p>
+                    <p>
+                        &equals;
+                        <span id="HalvesProbability">0.5099</span>
+                    </p>
+                </div>
+                <canvas id="canvas4" class="canvas"></canvas>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2021</p>
+        <p>Clayton McDaniel</p>
+    </footer>
+    
+    <script src="objects/circle.js"></script>
+    <script src="objects/point.js"></script>
+    <script src="objects/line.js"></script>
+    <script src="objects/triangle.js"></script>
+
+    <script src="functions.js"></script>
+
+    <script src="methods/base.js"></script>
+    <script src="methods/method13.js"></script>
+    <script src="methods/method14.js"></script>
+    <script src="methods/method12.js"></script>
+
+    <script src="animate.js"></script>
+
+    <!-- <script src="firstDraft.js"></script> -->
+</body>
+</html>
